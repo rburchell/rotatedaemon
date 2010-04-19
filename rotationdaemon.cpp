@@ -23,6 +23,10 @@ RotationDaemon::RotationDaemon(int argc, char **argv) :
     if (m_NET_ACTIVE_WINDOW == None) {
         qFatal("_NET_ACTIVE_WINDOW is apparantly None?");
     }
+
+    QTimer *t = new QTimer(this);
+    connect(t, SIGNAL(timeout()), SLOT(timerEvent()));
+    t->start(1000);
 }
 
 void RotationDaemon::rotate(int angle)
