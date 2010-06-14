@@ -1,0 +1,18 @@
+what is this?
+=============
+
+rotatedaemon is a C++ conversion (and enhancement) of a script called 'rotate.py' for Maemo (original author unknown).
+
+Basically, it rotates applications - and not just landscape or portrait, reverse landscape/portrait are supported too.
+
+It also supports a granular blacklist feature (to avoid rotating unstable applications), unlike rotate.py.
+
+I was going to do a fair bit more with this, but really, there aren't many applications that work well in portrait mode.
+
+contact
+=======
+
+All contact to do with this code should go to:
+ robin.burchell@collabora.co.uk
+
+Patches welcome.
