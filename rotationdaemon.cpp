@@ -67,12 +67,13 @@ void RotationDaemon::rotate(int angle)
 
 void RotationDaemon::timerEvent()
 {
-    QPoint p = getOrientationInformation();
-
     if (checkApplicationBlacklistToForceLandscape()) {
-        // if we're not already landscape, make us so.
+        // TODO: if we're not already landscape, make us so.
         return;
     }
+    
+    QPoint p = getOrientationInformation();
+    qDebug() << p;
 
     if (p.y() < -500) {
         rotate(1);
@@ -92,9 +93,11 @@ QPoint RotationDaemon::getOrientationInformation()
     // rewind
     m_accelerometer.seek(0);
 
-    // populate
-    p.setX(m_accelerometer.readLine().toInt());
-    p.setY(m_accelerometer.readLine().toInt());
+    QByteArray bytes = m_accelerometer.readAll();
+    QList<QByteArray> tokens = bytes.split(' ');
+
+    p.setX(tokens[0].toInt());
+    p.setY(tokens[1].toInt());
 
     return p;
 }
@@ -127,7 +130,8 @@ bool RotationDaemon::checkApplicationBlacklistToForceLandscape()
 
     // Now find what it is called
     XClassHint *xh = XAllocClassHint();
-    Status s = XGetClassHint(QX11Info::display(), activeWindow, xh);
+    //Status s = 
+    XGetClassHint(QX11Info::display(), activeWindow, xh);
 
     qDebug() << "Active window is " << xh->res_name << xh->res_class;
 

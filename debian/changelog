@@ -1,3 +1,16 @@
+rotatedaemon (0.1-2) unstable; urgency=low
+
+  * Fixes to make it even remotely functional.
+    Apparently this is a very old version of my code. :(
+
+ -- Robin Burchell <viroteck@viroteck.net>  Fri, 18 Jun 2010 16:00:31 +0100
+
+rotatedaemon (0.1-1) unstable; urgency=low
+
+  * Fix project file to install binary correct.
+
+ -- Robin Burchell <viroteck@viroteck.net>  Fri, 18 Jun 2010 15:24:22 +0100
+
 rotatedaemon (0.1) unstable; urgency=low
 
   * Initial release
