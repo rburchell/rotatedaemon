@@ -1,0 +1,20 @@
+This package was debianized by Robin Burchell <viroteck@viroteck.net> on
+Fri, 18 Jun 2010 14:20:22 +0100.
+
+It was downloaded from http://rburchell.com
+
+Upstream Author: Robin Burchell <viroteck@viroteck.net>
+
+Copyright: Robin Burchell 2010
+
+License:
+
+Licence of the packaged source is LGPLv2.
+
+The Debian packaging is (C) 2008, unknown <gnuton@gnuton.org> and
+is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
+
+
+# Please also look if there are files or directories which have a
+# different copyright/license attached and list them here.
+

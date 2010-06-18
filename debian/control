@@ -1,0 +1,16 @@
+Source: rotatedaemon
+Section: user/desktop 
+Priority: optional
+Maintainer: Robin Burchell <viroteck@viroteck.net>
+Build-Depends: debhelper (>= 5), libqt4-dev
+Standards-Version: 3.7.2
+
+Package: rotatedaemon
+Architecture: any
+Depends: libqt4-gui, libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libstdc++6 (>= 4.2.1)
+Description: Rotate applications through all four directions.
+ Forces all applications which are capable to rotate to all four
+ possible directions: portrait, landscape, reverse portrait, reverse
+ landscape.
+ .
+ Further Information: rburchell.com
