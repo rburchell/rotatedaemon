@@ -19,3 +19,9 @@ HEADERS += \
 target.path = /usr/bin
 
 INSTALLS += target
+
+maemo5:* {
+    INSTALLS += eventfile
+    eventfile.path =  /etc/event.d/
+    eventfile.files += rotated
+}

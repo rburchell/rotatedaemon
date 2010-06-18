@@ -1,0 +1,10 @@
+description "Starts the rotation daemon"
+
+start on started hildon-desktop
+stop on starting shutdown
+
+script
+	export DISPLAY=:0.0
+	exec /usr/bin/rotatedaemon &
+end script
+

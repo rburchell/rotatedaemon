@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+killall rotatedaemon
+
+exit 0
