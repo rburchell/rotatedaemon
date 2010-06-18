@@ -3,7 +3,7 @@
 ######################################################################
 
 TEMPLATE = app
-TARGET = 
+TARGET = rotatedaemon
 DEPENDPATH += .
 INCLUDEPATH += .
 
@@ -15,3 +15,7 @@ SOURCES += main.cpp \
 
 HEADERS += \
     rotationdaemon.h
+
+target.path = /usr/bin
+
+INSTALLS += target

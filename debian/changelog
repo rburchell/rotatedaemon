@@ -1,3 +1,9 @@
+rotatedaemon (0.1-3) unstable; urgency=low
+
+  * Don't ask.
+
+ -- Robin Burchell <viroteck@viroteck.net>  Fri, 18 Jun 2010 19:01:11 +0100
+
 rotatedaemon (0.1-2) unstable; urgency=low
 
   * Fixes to make it even remotely functional.
